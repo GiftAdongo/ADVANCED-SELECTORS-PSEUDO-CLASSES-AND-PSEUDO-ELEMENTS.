@@ -1,0 +1,50 @@
+body{
+    background-color: aqua;
+    color: black;
+}
+h1{
+    color: blueviolet;
+    font-family: 'Courier New', Courier, monospace;
+}
+a{
+    color:blue;
+    text-decoration: underline overline;
+}
+a:hover{
+    color: orangered;
+    font-size: 30px;
+    background-color: gold;
+}
+/*child selector*/
+/*Child Selector*/
+ul>li {
+    font-size: 30px;
+}
+
+/*Sibling Selector.*/
+ul+p {
+    background-color: cyan;
+    color: blueviolet;
+    border-radius: 10px;
+}
+
+li:nth-child(4) {
+    color:lightsalmon;
+}
+
+p:not(:first-of-type) {
+    text-decoration: underline;
+}
+
+li::before {
+    content: "💡";
+}
+
+a::after {
+    content: "💫";
+}
+
+p::first-letter {
+    font-size: 200%;
+    color: magenta;
+}
